@@ -2,6 +2,7 @@ import java.sql.*;
 
 public class books_database_create {
     public static void main(String[] args) {
+
         String url = "jdbc:mysql://localhost:3306/";
         String username = "root";
         String password = "*rajan12345#";
@@ -30,11 +31,13 @@ public class books_database_create {
                     "publisher VARCHAR(255)," +
                     "language VARCHAR(50)," +
                     "price FLOAT)";
+
             st.executeUpdate(createTableQuery);
             System.out.println("Table 'books' created successfully.");
 
             st.close();
             con.close();
+
         } catch (Exception e) {
             e.printStackTrace();  // better debugging output
         }
