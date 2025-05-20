@@ -16,8 +16,8 @@ public class books_database_create {
 
             String createDbQuery = "CREATE DATABASE IF NOT EXISTS " + databaseName;
             st.executeUpdate(createDbQuery);
+            
             System.out.println("Database '" + databaseName + "' created successfully.");
-
             con.close();
 
             con = DriverManager.getConnection(url + databaseName, username, password);
