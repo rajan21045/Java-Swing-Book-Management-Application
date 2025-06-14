@@ -116,13 +116,14 @@ public class books implements ActionListener {
 
         // Connect to MySQL database and insert book data
         try {
+
             String url = "jdbc:mysql://localhost:3306/books_db";  // Database URL
             String username = "root";                             // DB username
             String password = "*rajan12345#";                     // DB password
 
             Class.forName("com.mysql.cj.jdbc.Driver");           // Load JDBC driver
-
             Connection con = DriverManager.getConnection(url, username, password);
+            
             String query = "INSERT INTO books (name, author, genre, publisher, language, price) VALUES (?, ?, ?, ?, ?, ?)";
 
             PreparedStatement ps = con.prepareStatement(query);
