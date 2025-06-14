@@ -12,7 +12,9 @@ public class books implements ActionListener {
 
     // Constructor: Setup JFrame and components
     books() {
+
         JFrame f = new JFrame();
+
         f.setTitle("Book Management System");
         f.setSize(600, 500);
         f.setLayout(null);  // Disable layout manager for absolute positioning
