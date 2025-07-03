@@ -37,7 +37,7 @@ public class books implements ActionListener {
         t2 = new JTextField();
         t2.setBounds(200, 100, 300, 30);
         l2.setFont(new Font("Roboto", Font.BOLD, 14));
-
+ 
         // Genre label and text field
         l3 = new JLabel("Genre:");
         l3.setBounds(50, 140, 100, 30);
